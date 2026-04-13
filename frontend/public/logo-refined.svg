@@ -1,0 +1,73 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="networkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9b8f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d7a72;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .logo-kars { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 52px; font-weight: 700; fill: #2d7a72; }
+      .logo-engine { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 28px; fill: #999999; font-weight: 400; letter-spacing: 1px; }
+    </style>
+  </defs>
+  
+  <!-- Circular Background -->
+  <circle cx="90" cy="90" r="78" fill="white" opacity="0.8"/>
+  <circle cx="90" cy="90" r="78" fill="url(#networkGradient)" opacity="0.08"/>
+  <circle cx="90" cy="90" r="78" fill="none" stroke="url(#networkGradient)" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Network Nodes and Connections -->
+  <g>
+    <!-- Connection lines -->
+    <line x1="90" y1="18" x2="90" y2="35" stroke="#4a9b8f" stroke-width="2.5" opacity="0.6"/>
+    <line x1="156" y1="32" x2="140" y2="50" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+    <line x1="168" y1="54" x2="155" y2="68" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+    <line x1="168" y1="90" x2="150" y2="90" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+    <line x1="155" y1="130" x2="142" y2="142" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+    <line x1="90" y1="168" x2="90" y2="150" stroke="#4a9b8f" stroke-width="2.5" opacity="0.6"/>
+    <line x1="30" y1="145" x2="42" y2="130" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+    <line x1="12" y1="90" x2="30" y2="90" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+    <line x1="30" y1="35" x2="42" y2="50" stroke="#4a9b8f" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Network Nodes (dots) -->
+  <g fill="#4a9b8f">
+    <!-- Outer nodes -->
+    <circle cx="90" cy="20" r="5"/>
+    <circle cx="162" cy="34" r="4"/>
+    <circle cx="175" cy="58" r="4"/>
+    <circle cx="170" cy="90" r="4"/>
+    <circle cx="155" cy="145" r="4"/>
+    <circle cx="90" cy="165" r="5"/>
+    <circle cx="25" cy="145" r="4"/>
+    <circle cx="10" cy="90" r="4"/>
+    <circle cx="25" cy="34" r="4"/>
+    <!-- Center node (larger, different color) -->
+    <circle cx="90" cy="90" r="7" fill="#5eb3d6"/>
+  </g>
+  
+  <!-- Upward Arrow with Trend -->
+  <g>
+    <!-- Arrow shaft and head -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#5eb3d6"/>
+      </marker>
+    </defs>
+    <line x1="130" y1="145" x2="155" y2="55" stroke="#5eb3d6" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+    <!-- Arrow head custom -->
+    <polygon points="155,55 150,70 160,65" fill="#5eb3d6"/>
+  </g>
+  
+  <!-- Ascending Bar Chart -->
+  <g fill="#5eb3d6" opacity="0.75">
+    <rect x="125" y="120" width="7" height="35" rx="1.5" fill="#5eb3d6"/>
+    <rect x="137" y="105" width="7" height="50" rx="1.5" fill="#5eb3d6"/>
+    <rect x="149" y="88" width="7" height="67" rx="1.5" fill="#5eb3d6"/>
+  </g>
+  
+  <!-- Text: KARS -->
+  <text x="255" y="85" class="logo-kars">KARS</text>
+  
+  <!-- Text: SEO Engine -->
+  <text x="255" y="128" class="logo-engine">SEO Engine</text>
+</svg>

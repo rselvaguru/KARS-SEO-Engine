@@ -1,0 +1,7 @@
+# Frontend styles directory
+
+This directory contains global CSS files for the KARS SEO Engine frontend.
+
+## Files
+
+- **globals.css** - Global Tailwind CSS imports and base styles
